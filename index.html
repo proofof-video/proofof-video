@@ -43,7 +43,7 @@
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#gallery">Browse Gallery</a>
-      <a class="btn btn-secondary" href="CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
+      <a class="btn btn-secondary" href="contributing.html">Contribute</a>
     </div>
   </div>
 </section>
@@ -87,7 +87,7 @@
       <h2>Gallery</h2>
       <p>
         Each block groups videos generated from the <strong>same prompt</strong> across different models and tools.
-        <a href="CONTRIBUTING.md" target="_blank" rel="noopener">Add yours →</a>
+        <a href="contributing.html">Add yours →</a>
       </p>
     </div>
 
@@ -110,6 +110,7 @@
 {% for entry in group.items %}
           <div class="video-card">
             <div class="video-embed">
+{% if entry.youtube_id != "" %}
               <iframe
                 src="https://www.youtube.com/embed/{{ entry.youtube_id }}"
                 title="{{ entry.tool }} — {{ first.prompt_title }}"
@@ -117,6 +118,9 @@
                 allowfullscreen
                 loading="lazy"
               ></iframe>
+{% else %}
+              <div class="video-placeholder">Coming Soon</div>
+{% endif %}
             </div>
             <div class="video-meta">
               <span class="model">{{ entry.tool }}</span>
@@ -150,7 +154,7 @@
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://github.com/proofof-video/proofof-video/fork" target="_blank" rel="noopener">Fork on GitHub</a>
-        <a class="btn btn-secondary" href="CONTRIBUTING.md" target="_blank" rel="noopener">Read the Guide</a>
+        <a class="btn btn-secondary" href="contributing.html">Read the Guide</a>
       </div>
     </div>
   </div>
