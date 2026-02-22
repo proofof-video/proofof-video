@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proof of Video — AI/LLM 3D World Generation Gallery</title>
+  <meta name="description" content="A community gallery comparing AI and LLM-generated 3D worlds and videos side-by-side, using the same prompts across different models and software." />
+  <meta property="og:title" content="Proof of Video" />
+  <meta property="og:description" content="Side-by-side comparison of AI/LLM-generated 3D worlds using the same prompts across different models and software." />
+  <meta property="og:url" content="https://proofof.video" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://proofof.video" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container inner">
+    <span class="site-title">proof<span>of</span>.video</span>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#contribute">Contribute</a>
+      <a href="https://github.com/proofof-video/proofof-video" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main>
+<section class="hero">
+  <div class="container">
+    <h1>Same prompt.<br><span class="highlight">Different AI worlds.</span></h1>
+    <p>
+      A community gallery comparing state-of-the-art LLM and AI-generated 3D worlds
+      side-by-side — same (or similar) prompts, different models, different software, real video output.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#gallery">Browse Gallery</a>
+      <a class="btn btn-secondary" href="CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Every entry follows the same transparent format so comparisons are meaningful.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>Prompt</h4>
+        <p>A text prompt (or scene description) is shared across all entries in a comparison group.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>Generate</h4>
+        <p>Run the prompt through your chosen LLM model + 3D/generative software pipeline.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>Record</h4>
+        <p>Capture the output as a video. Upload to YouTube and note the exact model and software versions used.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>Submit</h4>
+        <p>Open a Pull Request adding your video card to the gallery. The community reviews and merges it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <h2>Gallery</h2>
+      <p>
+        Each block groups videos generated from the <strong>same prompt</strong> across different models and tools.
+        <a href="CONTRIBUTING.md" target="_blank" rel="noopener">Add yours →</a>
+      </p>
+    </div>
+
+    <div class="comparisons">
+
+      <!-- ===== Comparison #1 ===== -->
+      <div class="comparison-block" id="prompt-nature-village">
+        <div class="comparison-block-header">
+          <h3>Nature Village Scene</h3>
+          <div>
+            <span class="prompt-label">Prompt</span>
+            <p class="prompt-text">
+              "A peaceful village surrounded by lush green hills, a flowing river, tall trees, and a bright blue sky with scattered clouds. Cinematic camera flythrough."
+            </p>
+          </div>
+        </div>
+        <div class="video-grid">
+
+          <div class="video-card">
+            <div class="video-embed">
+              <!-- Replace VIDEO_ID with real YouTube video ID when available -->
+              <iframe
+                src="https://www.youtube.com/embed/gBmKSKfwuqU"
+                title="LocalGPT-Gen — Nature Village"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="model">LocalGPT-Gen</span>
+              <div>
+                <span class="tag model-tag">GPT-4o</span>
+                <span class="tag software">LocalGPT v0.1</span>
+              </div>
+              <p class="desc">
+                AI-driven world generation via LocalGPT. See
+                <a href="https://github.com/localgpt-app/localgpt" target="_blank" rel="noopener">localgpt-app/localgpt</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/kfVsfOSbJY0"
+                title="Blender MCP — Nature Village"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="model">Blender MCP</span>
+              <div>
+                <span class="tag model-tag">Claude 3.5 Sonnet</span>
+                <span class="tag software">Blender 4.x + MCP</span>
+              </div>
+              <p class="desc">
+                LLM-controlled Blender via the Model Context Protocol.
+                <a href="https://github.com/ahujasid/blender-mcp" target="_blank" rel="noopener">ahujasid/blender-mcp</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /comparison-block -->
+
+      <!-- ===== Comparison #2 ===== -->
+      <div class="comparison-block" id="prompt-physics-sim">
+        <div class="comparison-block-header">
+          <h3>Physics Simulation — Falling Objects</h3>
+          <div>
+            <span class="prompt-label">Prompt</span>
+            <p class="prompt-text">
+              "Simulate 100 rigid-body spheres of varying sizes and masses falling onto a flat surface. Show realistic physics collisions and resting positions."
+            </p>
+          </div>
+        </div>
+        <div class="video-grid">
+
+          <div class="video-card">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/LaE6R_OjZLw"
+                title="Genesis Embodied AI — Physics Simulation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="model">Genesis</span>
+              <div>
+                <span class="tag model-tag">Genesis v0.2</span>
+                <span class="tag software">Genesis Physics Engine</span>
+              </div>
+              <p class="desc">
+                Generative world & physics simulation engine.
+                <a href="https://genesis-embodied-ai.github.io/" target="_blank" rel="noopener">genesis-embodied-ai.github.io</a>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Add your Blender MCP physics video here — see CONTRIBUTING.md -->
+          <!--
+          <div class="video-card">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Blender MCP — Physics Simulation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="model">Blender MCP</span>
+              <div>
+                <span class="tag model-tag">GPT-4o</span>
+                <span class="tag software">Blender 4.x + MCP</span>
+              </div>
+              <p class="desc">
+                Same physics prompt run through Blender controlled by GPT-4o via MCP.
+              </p>
+            </div>
+          </div>
+          -->
+
+        </div>
+      </div><!-- /comparison-block -->
+
+      <!-- ===== ADD MORE ===== -->
+      <!--
+        To add a new comparison, copy the block above, update the prompt,
+        and add video cards for each model/software you tested.
+        See CONTRIBUTING.md for the full guide.
+      -->
+
+    </div><!-- /comparisons -->
+  </div>
+</section>
+
+<!-- ===== CONTRIBUTE ===== -->
+<section id="contribute">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Add Your Experiment</h2>
+      <p>
+        Run the same prompt through a different model or software and share the results.
+        All community submissions are welcome — the more data points, the richer the comparison.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/proofof-video/proofof-video/fork" target="_blank" rel="noopener">Fork on GitHub</a>
+        <a class="btn btn-secondary" href="CONTRIBUTING.md" target="_blank" rel="noopener">Read the Guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <p>
+      <a href="https://github.com/proofof-video/proofof-video" target="_blank" rel="noopener">proofof-video/proofof-video</a>
+      &nbsp;·&nbsp;
+      Open-source, community-driven
+      &nbsp;·&nbsp;
+      <a href="https://github.com/proofof-video/proofof-video/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
