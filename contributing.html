@@ -112,8 +112,12 @@ prompt_id: school
 prompt_title: "School Scene"
 prompt_text: "Generate a school building with classrooms, a playground, and surrounding environment."
 tool: "LocalGPT Gen"
-model: "Claude Opus"
-software: "LocalGPT + Bevy"
+models:
+  - { name: "Claude", version: "Opus 4.5" }
+software:
+  - { name: "LocalGPT Gen", version: "0.2.0" }
+  - { name: "Bevy", version: "0.15" }
+cost: "Free (local)"
 youtube_id: "JfkQpJD9HeU"
 description: "LLM-driven world generation in Rust/Bevy using Claude Opus."
 link: "https://github.com/localgpt-app/localgpt"
@@ -135,8 +139,9 @@ link_text: "localgpt-app/localgpt"
           <tr><td><code>prompt_title</code></td><td>✅</td><td>Human-readable title for the comparison group</td></tr>
           <tr><td><code>prompt_text</code></td><td>✅</td><td>The exact prompt used to generate the scene</td></tr>
           <tr><td><code>tool</code></td><td>✅</td><td>Name of the tool / software pipeline</td></tr>
-          <tr><td><code>model</code></td><td>✅</td><td>Exact model name + version (e.g. <code>Claude Opus</code>, <code>GPT-4o</code>)</td></tr>
-          <tr><td><code>software</code></td><td>✅</td><td>Software + version (e.g. <code>LocalGPT + Bevy</code>)</td></tr>
+          <tr><td><code>models</code></td><td>✅</td><td>Array of models used, each with <code>name</code> and <code>version</code></td></tr>
+          <tr><td><code>software</code></td><td>✅</td><td>Array of software used, each with <code>name</code> and <code>version</code></td></tr>
+          <tr><td><code>cost</code></td><td>✅</td><td>Estimated cost (e.g. <code>~$0.15</code>, <code>Free (local)</code>, <code>$0.05/token</code>)</td></tr>
           <tr><td><code>youtube_id</code></td><td>✅</td><td>YouTube video ID (the part after <code>v=</code>)</td></tr>
           <tr><td><code>description</code></td><td>✅</td><td>Brief description of the tool or result</td></tr>
           <tr><td><code>link</code></td><td></td><td>URL to the tool's repo or website</td></tr>

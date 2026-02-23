@@ -125,8 +125,13 @@
             <div class="video-meta">
               <span class="model">{{ entry.tool }}</span>
               <div>
-                <span class="tag model-tag">{{ entry.model }}</span>
-                <span class="tag software">{{ entry.software }}</span>
+{% for m in entry.models %}
+                <span class="tag model-tag">{{ m.name }} {{ m.version }}</span>
+{% endfor %}
+{% for s in entry.software %}
+                <span class="tag software">{{ s.name }} {{ s.version }}</span>
+{% endfor %}
+                <span class="tag cost">{{ entry.cost }}</span>
               </div>
               <p class="desc">
                 {{ entry.description }}{% if entry.link %}
