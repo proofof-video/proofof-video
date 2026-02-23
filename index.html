@@ -100,10 +100,12 @@
         <div class="comparison-block-header">
           <h3>{{ first.prompt_title }}</h3>
           <div>
-            <span class="prompt-label">Prompt</span>
-            <p class="prompt-text">
-              "{{ first.prompt_text }}"
-            </p>
+            <span class="prompt-label">Prompts</span>
+{% for p in first.prompts %}
+            <div class="prompt-line">
+              <code>{{ p }}</code>
+            </div>
+{% endfor %}
           </div>
         </div>
         <div class="video-grid">
@@ -123,7 +125,6 @@
 {% endif %}
             </div>
             <div class="video-meta">
-              <span class="model">{{ entry.tool }}</span>
               <div>
 {% for m in entry.models %}
                 <span class="tag model-tag">{{ m.name }} {{ m.version }}</span>
@@ -131,7 +132,14 @@
 {% for s in entry.software %}
                 <span class="tag software">{{ s.name }} {{ s.version }}</span>
 {% endfor %}
-                <span class="tag cost">{{ entry.cost }}</span>
+                <span class="tag cost">${{ entry.cost_usd }}</span>
+              </div>
+              <div class="prompts">
+{% for p in entry.prompts %}
+                <div class="prompt-line">
+                  <code>{{ p }}</code>
+                </div>
+{% endfor %}
               </div>
               <p class="desc">
                 {{ entry.description }}{% if entry.link %}

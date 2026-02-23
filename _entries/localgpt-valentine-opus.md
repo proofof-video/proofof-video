@@ -1,16 +1,15 @@
 ---
 prompt_id: valentine-heart
-prompt_title: "2026 Valentine Heart"
-prompt_text: "Generate a Valentine's Day heart shape using spheres and cubes in a 3D scene."
-tool: "LocalGPT Gen"
+prompt_title: "Valentine Heart"
+prompts:
+  - "create a heart outlines with spheres and cubes"
 models:
   - { name: "Claude", version: "Opus 4.5" }
 software:
-  - { name: "LocalGPT Gen", version: "0.2.0" }
-  - { name: "Bevy", version: "0.15" }
-cost: "Free (local)"
+  - { name: "LocalGPT Gen", version: "v0.2.0" }
+cost_usd: 0.5
 youtube_id: "n18qnSDmBK0"
-description: "LLM-driven world generation in Rust/Bevy using Claude Opus."
-link: "https://github.com/localgpt-app/localgpt"
-link_text: "localgpt-app/localgpt"
+description: "LLM-driven 3D model generation in Rust/Bevy using Claude Opus."
+link: "https://www.linkedin.com/posts/yiiwang_localgpt-gen-2026-valentine-heart-activity-7428679862053253120-woIG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAM8BXsBMWD9mixVUUs5Jc-Oq3A-Td3jcN4"
+link_text: "Linkedin Post"
 ---

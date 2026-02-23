@@ -1,16 +1,15 @@
 ---
 prompt_id: school
 prompt_title: "School Scene"
-prompt_text: "Generate a school building with classrooms, a playground, and surrounding environment."
-tool: "LocalGPT Gen"
+prompts:
+  - "use basic primitives to design a school"
 models:
-  - { name: "Claude", version: "Opus" }
+  - { name: "Opus", version: "4.5" }
 software:
-  - { name: "LocalGPT Gen", version: "0.1.0" }
-  - { name: "Bevy", version: "0.14" }
-cost: "Free (local)"
-youtube_id: "JfkQpJD9HeU"
-description: "LLM-driven world generation in Rust/Bevy using Claude Opus."
-link: "https://github.com/localgpt-app/localgpt"
-link_text: "localgpt-app/localgpt"
+  - { name: "LocalGPT Gen", version: "v0.2.0" }
+cost_usd: 1
+youtube_id: "cMCGW7eMUNE"
+description: "LLM-driven scene generation in Rust/Bevy using Claude Opus."
+link: "https://x.com/LocalGPT/status/2023243534090879297"
+link_text: "X post"
 ---

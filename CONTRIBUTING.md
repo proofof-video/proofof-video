@@ -33,14 +33,14 @@ Fill in the following table of fields as YAML front matter:
 ---
 prompt_id: nature-village
 prompt_title: "Nature Village Scene"
-prompt_text: "A peaceful village surrounded by lush green hills, a flowing river, tall trees, and a bright blue sky with scattered clouds."
-tool: "Blender MCP"
+prompts:
+  - "A peaceful village surrounded by lush green hills, a flowing river, tall trees, and a bright blue sky with scattered clouds."
 models:
   - { name: "Claude", version: "3.5 Sonnet" }
 software:
   - { name: "Blender", version: "4.2" }
   - { name: "Blender MCP", version: "0.1.0" }
-cost: "~$0.15"
+cost_usd: 0.15
 youtube_id: "kfVsfOSbJY0"
 description: "LLM-controlled Blender via the Model Context Protocol."
 link: "https://github.com/ahujasid/blender-mcp"
@@ -52,11 +52,10 @@ link_text: "ahujasid/blender-mcp"
 |-------|----------|-------------|
 | `prompt_id` | ✅ | Slug shared by all entries using the same prompt (e.g. `nature-village`) |
 | `prompt_title` | ✅ | Human-readable title for the comparison group |
-| `prompt_text` | ✅ | The exact prompt used to generate the scene |
-| `tool` | ✅ | Name of the tool / software pipeline |
+| `prompts` | ✅ | Array of prompts used (multi-turn conversations) |
 | `models` | ✅ | Array of models used, each with `name` and `version` |
 | `software` | ✅ | Array of software used, each with `name` and `version` |
-| `cost` | ✅ | Estimated cost (e.g. `"~$0.15"`, `"Free (local)"`, `"$0.05/token"`) |
+| `cost_usd` | ✅ | Approximate model cost for this experiment in USD (number, e.g. `0.15`, `0`, `1.50`) |
 | `youtube_id` | ✅ | YouTube video ID (the part after `v=`) |
 | `description` | ✅ | Brief description of the tool or result |
 | `link` | | URL to the tool's repo or website |

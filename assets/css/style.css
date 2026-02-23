@@ -197,9 +197,34 @@ section + section {
 }
 
 .prompt-text {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--text);
-  font-style: italic;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.prompt-line {
+  margin-bottom: 0.5rem;
+}
+
+.prompt-line code,
+.prompt-line .prompt-text {
+  display: block;
+  font-size: 0.85rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .video-grid {

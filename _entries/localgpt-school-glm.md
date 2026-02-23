@@ -1,16 +1,13 @@
 ---
 prompt_id: school
 prompt_title: "School Scene"
-prompt_text: "Generate a school building with classrooms, a playground, and surrounding environment."
-tool: "LocalGPT Gen"
+prompts:
+  - "use basic primitives to design a school"
 models:
-  - { name: "GLM", version: "4" }
+  - { name: "GLM", version: "5" }
 software:
-  - { name: "LocalGPT Gen", version: "0.1.0" }
-  - { name: "Bevy", version: "0.14" }
-cost: "Free (local)"
+  - { name: "LocalGPT Gen", version: "v0.3.0" }
+cost_usd: N/A
 youtube_id: ""
 description: "Placeholder — GLM model result coming soon."
-link: "https://github.com/localgpt-app/localgpt"
-link_text: "localgpt-app/localgpt"
 ---
