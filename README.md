@@ -24,6 +24,34 @@ Inspired by projects like:
 
 All skill levels and tools are welcome. The more data points, the richer the comparison.
 
+## Local Development
+
+This site uses Jekyll with the `github-pages` gem to match GitHub Pages' build environment.
+
+### Prerequisites
+
+- Ruby 3.3.x (managed via [mise](https://mise.jdx.dev/) or similar)
+- Bundler
+
+### Setup
+
+```bash
+# Install Ruby 3.3 (if using mise)
+mise install ruby@3.3
+
+# Install dependencies
+bundle install
+
+# Start local server with live reload
+bundle exec jekyll serve --livereload
+```
+
+The site will be available at http://127.0.0.1:4000
+
+### Ruby Version
+
+GitHub Pages currently uses Ruby 3.3.4. This project is configured for Ruby 3.3.x via `mise.toml` to ensure compatibility with the `github-pages` gem (v232) and its dependencies.
+
 ## Site Structure
 
 ```
