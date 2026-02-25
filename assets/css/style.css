@@ -60,10 +60,18 @@ header .inner {
 }
 
 .site-title {
+  display: flex;
+  align-items: center;
+  gap: 0;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
+}
+
+.site-title .logo {
+  width: 48px;
+  height: 48px;
 }
 
 .site-title span { color: var(--accent); }
@@ -76,6 +84,14 @@ nav {
 
 nav a { color: var(--muted); }
 nav a:hover { color: var(--text); text-decoration: none; }
+
+nav .github-link {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+nav .github-link:hover { color: var(--text); }
 
 /* ===== Hero ===== */
 .hero {

@@ -1,2 +1,14 @@
 [tools]
-ruby = "3.3"
+ruby = "3.3.4"
+
+[tasks.install]
+description = "Install Ruby dependencies"
+run = "bundle install"
+
+[tasks.serve]
+description = "Start Jekyll server with live reload"
+run = "bundle exec jekyll serve --livereload"
+
+[tasks.build]
+description = "Build the Jekyll site"
+run = "bundle exec jekyll build"
