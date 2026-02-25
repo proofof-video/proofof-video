@@ -1,6 +1,7 @@
 ---
 prompt_id: school
 prompt_title: "School Scene"
+date: "2025-02-24"
 prompts:
   - "use basic primitives to design a school"
 models:

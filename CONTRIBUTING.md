@@ -33,6 +33,7 @@ Fill in the following table of fields as YAML front matter:
 ---
 prompt_id: nature-village
 prompt_title: "Nature Village Scene"
+date: "2025-02-22"
 prompts:
   - "A peaceful village surrounded by lush green hills, a flowing river, tall trees, and a bright blue sky with scattered clouds."
 models:
@@ -52,13 +53,14 @@ link_text: "ahujasid/blender-mcp"
 |-------|----------|-------------|
 | `prompt_id` | ✅ | Slug shared by all entries using the same prompt (e.g. `nature-village`) |
 | `prompt_title` | ✅ | Human-readable title for the comparison group |
+| `date` | ✅ | Date of the work in YYYY-MM-DD format |
 | `prompts` | ✅ | Array of prompts used (multi-turn conversations) |
 | `models` | ✅ | Array of models used, each with `name` and `version` |
 | `software` | ✅ | Array of software used, each with `name` and `version` |
 | `cost_usd` | ✅ | Approximate model cost for this experiment in USD (number, e.g. `0.15`, `0`, `1.50`) |
 | `youtube_id` | ✅ | YouTube video ID (the part after `v=`) |
 | `description` | ✅ | Brief description of the tool or result |
-| `link` | | URL to the tool's repo or website |
+| `link` | | URL to a write-up, blog post, social media post, or reference about this work |
 | `link_text` | | Display text for the link |
 
 #### Adding to an existing comparison

@@ -315,6 +315,7 @@ section + section {
 
 .tag.software  { border-color: #3b4cca; color: var(--accent-2); }
 .tag.model-tag { border-color: #065f46; color: var(--accent); }
+.tag.date      { border-color: #525252; color: var(--muted); }
 
 .video-meta .desc {
   font-size: 0.85rem;

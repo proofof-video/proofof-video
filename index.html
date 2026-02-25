@@ -138,6 +138,7 @@
                 <span class="tag software">{{ s.name }} {{ s.version }}</span>
 {% endfor %}
                 <span class="tag cost">${{ entry.cost_usd }}</span>
+                <span class="tag date">{{ entry.date | date: "%Y-%m-%d" }}</span>
               </div>
               <div class="prompts">
 {% for p in entry.prompts %}

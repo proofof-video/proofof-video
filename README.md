@@ -1,4 +1,4 @@
-# Proof of Video
+# <img src="assets/logo/pov.svg" alt="logo" width="32" height="32"> Proof of Video
 
 **[proofof.video](https://proofof.video)** — A community gallery comparing state-of-the-art AI/LLM-generated **interactive, explorable worlds** (2D and 3D) side-by-side.
 

@@ -1,6 +1,7 @@
 ---
 prompt_id: valentine-heart
 prompt_title: "Valentine Heart"
+date: "2025-02-15"
 prompts:
   - "create a heart outlines with spheres and cubes"
 models:
