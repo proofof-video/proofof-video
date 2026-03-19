@@ -5,7 +5,7 @@ date: "2025-02-15"
 prompts:
   - "use basic primitives to design a school"
 models:
-  - { name: "Opus", version: "4.5" }
+  - { name: "Claude", version: "Opus 4.5" }
 software:
   - { name: "LocalGPT Gen", version: "v0.2.0" }
 cost_usd: 1
